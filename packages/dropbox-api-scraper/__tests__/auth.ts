@@ -1,9 +1,4 @@
-// import dropboxApiScraper from "../";
-
-// if we want to test using a real token
-const { USE_REAL_API } = process.env;
-
-describe("@cloud-photo-viewer/dropbox-api-scraper", () => {
+describe("@cloud-photo-viewer/dropbox-api-scraper/auth", () => {
   beforeAll(() => {
     // check if JEST_TEST_APP_CLOUD_PHOTO_VIEWER_DROPBOX_PROTOTYPE_TOKEN exists
     // if (USE_REAL_API) {
@@ -26,17 +21,14 @@ describe("@cloud-photo-viewer/dropbox-api-scraper", () => {
     }
   });
 
-  it.todo(
-    "should be able to use the Dropbox token from a file for prototyping"
-  );
+  it.todo("should authenticate the user using a token file");
+  // use `@node-api-toolkit/save-token/getToken`
 
-  // const { token } = await dropboxApiScraper({
-  //   auth: {
+  // const { token } = await auth({
   //     useTokenFromFile:
   //       "JEST_TEST_APP_CLOUD_PHOTO_VIEWER_DROPBOX_PROTOTYPE_TOKEN",
   //     appKey: "KEY",
   //     appSecret: "SECRET"
-  //   }
   // });
 
   // if (USE_REAL_API) {
